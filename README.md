@@ -2,15 +2,15 @@
 
 This Terraform module is used to create and configure a WireGuard reverse proxy server.
 
-I'd created this module as a solution / personal project that would allow me access to home-assistant and other resources on my internal network, as I don't have access to the router, so port forwarding is not an option.
+I created this module as a solution / personal project that would allow me access to home-assistant and other resources on my internal network, as I don't have access to the router and port forwarding is not an option.
 
-The module will:
+**The module will:**
 
 1. Create an Ubuntu based EC2 instance
 2. Install WireGuard and generate the required configuration for NAT'ing
 3. Update the A record used for the proxy on instance startup
 
-*Note*: This has only been tested on Ubuntu 20.04 LTS x64, though should still work on other versions/architectures.
+**Note**: This has only been tested on Ubuntu 20.04 LTS x64, though should still work on other versions/architectures.
 
 ## Prerequisites
 - A Hosted Zone in Route 53
